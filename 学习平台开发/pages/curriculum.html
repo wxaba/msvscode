@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!--导航栏-->
+    <div class="container-fluid bg-light"
+      style="background-color: rgba(248,249,250,0.5);">
+      <div class="container" style="background-color: rgba(248,249,250,0.5);">
+        <nav class="navbar navbar-expand-xl bg-light"
+          style="background-color: rgba(248,249,250,0.5);">
+          <!-- LOGO -->
+          <a class="navbar-brand" href="../index.html"><img src="../img/logo.png"
+              style="width: 60px;"></a>
+          <!-- Toggler/collapsibe Button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html"><span>首页</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="curriculum.html"><span style="font-size: larger;">课程中心</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html"><span>学习中心</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span>学习社区</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span>行业资讯</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span>更多</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- 面包屑 -->
+    <div class="container-fluid">
+        <div class="container mt-3">               
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">首页</a></li>
+            <li class="breadcrumb-item active">全部课程</li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+    <div class="container mt-3">
+      <h4>课程选择</h4>
+      <br>
+      <!-- Nav pills -->
+      <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="pill" href="#home">全部</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#menu1">岗位专业</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#menu2">业务主题</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#menu3">职业/执业资格</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#menu4">行业会议</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#menu5">专项培训</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#menu6">在线训练营</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#menu7">专题直播</a>
+        </li>
+      </ul>
+    
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <!--全部课程-->
+        <div id="home" class="container tab-pane active"><br>
+          <div class="container mt-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top" 
+              src="https://oss.toujianyun.com/data/202007/hYw8xcQ5pz.jpg?x-oss-process=image/resize,m_fill,h_422,w_750/quality,q_90" 
+              alt="Card image" 
+              style="width:100%">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">EPC 总承包的质量管理</p>
+                <a href="#" class="btn btn-primary">立即学习</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--岗位专业-->
+        <div id="menu1" class="container tab-pane fade">
+            <hr>
+            <ul class="nav nav-pills" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="pill" href="#menu1-home">全部</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu1-menu1">项目经理</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu1-menu2">商务经理</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu1-menu3">项目总工</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu1-menu4">预算员</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu1-menu5">技术员</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu1-menu6">施工员</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu1-menu7">资料员</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu1-menu8">测量员</a>
+              </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div id="menu1-home" class="container tab-pane active"><br>
+                
+                <h3>全部</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="container mt-3">
+                  <div class="card" style="width:400px">
+                    <img class="card-img-top" 
+                    src="https://oss.toujianyun.com/data/202007/hYw8xcQ5pz.jpg?x-oss-process=image/resize,m_fill,h_422,w_750/quality,q_90" 
+                    alt="Card image" 
+                    style="width:100%">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text">EPC 总承包的质量管理</p>
+                      <a href="#" class="btn btn-primary">立即学习</a>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+              <div id="menu1-menu1" class="container tab-pane fade"><br>
+                <div class="container">
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">全部</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">质量管理</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">绿色施工</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">沟通协调</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">风险管控</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">综合管理</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">进度管理</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">成本管控</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">审计管理</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">安全管理</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">团队管理</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">HSE 管理</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">班组管理</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">项目综述</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">项目管理策划</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">合同管理</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">案例课</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">收尾管理</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">资源管理</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">施工管理</a>
+                    </li>
+                  </ul>
+                </div>
+                <h3>项目经理</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="container mt-3">
+                  <div class="card" style="width:400px">
+                    <img class="card-img-top" 
+                    src="https://oss.toujianyun.com/data/202007/hYw8xcQ5pz.jpg?x-oss-process=image/resize,m_fill,h_422,w_750/quality,q_90" 
+                    alt="Card image" 
+                    style="width:100%">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text">EPC 总承包的质量管理</p>
+                      <a href="#" class="btn btn-primary">立即学习</a>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+              <div id="menu1-menu2" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <div class="container mt-3">
+                  <div class="card" style="width:400px">
+                    <img class="card-img-top" 
+                    src="https://oss.toujianyun.com/data/202007/hYw8xcQ5pz.jpg?x-oss-process=image/resize,m_fill,h_422,w_750/quality,q_90" 
+                    alt="Card image" 
+                    style="width:100%">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text">EPC 总承包的质量管理</p>
+                      <a href="#" class="btn btn-primary">立即学习</a>
+                    </div>
+                  </div>
+                </div>
+              
+              
+              </div>
+              <div id="menu1-menu3" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <div class="container mt-3">
+                  <div class="card" style="width:400px">
+                    <img class="card-img-top" 
+                    src="https://oss.toujianyun.com/data/202007/hYw8xcQ5pz.jpg?x-oss-process=image/resize,m_fill,h_422,w_750/quality,q_90" 
+                    alt="Card image" 
+                    style="width:100%">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text">EPC 总承包的质量管理</p>
+                      <a href="#" class="btn btn-primary">立即学习</a>
+                    </div>
+                  </div>
+                </div>
+              
+              
+              </div>
+              <div id="menu1-menu4" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <div class="container mt-3">
+                  <div class="card" style="width:400px">
+                    <img class="card-img-top" 
+                    src="https://oss.toujianyun.com/data/202007/hYw8xcQ5pz.jpg?x-oss-process=image/resize,m_fill,h_422,w_750/quality,q_90" 
+                    alt="Card image" 
+                    style="width:100%">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text">EPC 总承包的质量管理</p>
+                      <a href="#" class="btn btn-primary">立即学习</a>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+              <div id="menu1-menu5" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <div class="container mt-3">
+                  <div class="card" style="width:400px">
+                    <img class="card-img-top" 
+                    src="https://oss.toujianyun.com/data/202007/hYw8xcQ5pz.jpg?x-oss-process=image/resize,m_fill,h_422,w_750/quality,q_90" 
+                    alt="Card image" 
+                    style="width:100%">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text">EPC 总承包的质量管理</p>
+                      <a href="#" class="btn btn-primary">立即学习</a>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+              <div id="menu1-menu6" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <div class="container mt-3">
+                  <div class="card" style="width:400px">
+                    <img class="card-img-top" 
+                    src="https://oss.toujianyun.com/data/202007/hYw8xcQ5pz.jpg?x-oss-process=image/resize,m_fill,h_422,w_750/quality,q_90" 
+                    alt="Card image" 
+                    style="width:100%">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text">EPC 总承包的质量管理</p>
+                      <a href="#" class="btn btn-primary">立即学习</a>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+              <div id="menu1-menu7" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <div class="container mt-3">
+                  <div class="card" style="width:400px">
+                    <img class="card-img-top" 
+                    src="https://oss.toujianyun.com/data/202007/hYw8xcQ5pz.jpg?x-oss-process=image/resize,m_fill,h_422,w_750/quality,q_90" 
+                    alt="Card image" 
+                    style="width:100%">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text">EPC 总承包的质量管理</p>
+                      <a href="#" class="btn btn-primary">立即学习</a>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+              <div id="menu1-menu8" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <div class="container mt-3">
+                  <div class="card" style="width:400px">
+                    <img class="card-img-top" 
+                    src="https://oss.toujianyun.com/data/202007/hYw8xcQ5pz.jpg?x-oss-process=image/resize,m_fill,h_422,w_750/quality,q_90" 
+                    alt="Card image" 
+                    style="width:100%">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text">EPC 总承包的质量管理</p>
+                      <a href="#" class="btn btn-primary">立即学习</a>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+        </div>
+
+        <!-- 业务主题 -->
+        <div id="menu2" class="container tab-pane fade">
+          <hr>
+            <ul class="nav nav-pills" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="pill" href="#menu2-home">全部</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu2-menu1">建筑业财税</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu2-menu2">人力资源管理</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu2-menu3">EPC 项目管理</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu2-menu4">市场营销</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu2-menu5">通识管理</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu2-menu6">新员工培训</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu2-menu7">安全管理</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu2-menu8">国际工程管理</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu2-menu9">物资设备管理</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu2-menu10">企业管理</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu2-menu11">党务管理</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu2-menu12">BIM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu2-menu13">投融资</a>
+              </li>
+            </ul>
+          
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div id="menu2-home" class="container tab-pane active"><br>
+                <h3>HOME</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div id="menu2-menu1" class="container tab-pane fade"><br>
+                <h3>Menu 1</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div id="menu2-menu2" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </div>
+              <div id="menu2-menu3" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </div>
+              <div id="menu2-menu4" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </div>
+              <div id="menu2-menu5" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </div>
+              <div id="menu2-menu6" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </div>
+              <div id="menu2-menu7" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </div>
+              <div id="menu2-menu8" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </div>
+              <div id="menu2-menu9" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </div>
+              <div id="menu2-menu10" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </div>
+              <div id="menu2-menu11" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </div>
+              <div id="menu2-menu12" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </div>
+              <div id="menu2-menu13" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </div>
+            </div>
+        </div>
+
+        <div id="menu3" class="container tab-pane fade">
+          <hr><!-- 二级菜单 -->
+          <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="pill" href="#menu1-home">全部</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#menu1-menu1">项目经理</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#menu1-menu2">商务经理</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#menu1-menu3">项目总工</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#menu1-menu4">预算员</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#menu1-menu5">技术员</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#menu1-menu6">施工员</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#menu1-menu7">资料员</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#menu1-menu8">测量员</a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="menu1-home" class="container tab-pane active"><br>
+              <h3>HOME</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div id="menu1-menu1" class="container tab-pane fade"><br>
+              <h3>Menu 1</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="menu1-menu2" class="container tab-pane fade"><br>
+              <h3>Menu 2</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="menu1-menu3" class="container tab-pane fade"><br>
+              <h3>Menu 2</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="menu1-menu4" class="container tab-pane fade"><br>
+              <h3>Menu 2</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="menu1-menu5" class="container tab-pane fade"><br>
+              <h3>Menu 2</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="menu1-menu6" class="container tab-pane fade"><br>
+              <h3>Menu 2</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="menu1-menu7" class="container tab-pane fade"><br>
+              <h3>Menu 2</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="menu1-menu8" class="container tab-pane fade"><br>
+              <h3>Menu 2</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+          </div>
+      </div>
+
+        <div id="menu4" class="container tab-pane fade"><br>
+          <h3>Menu 2</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+        <div id="menu5" class="container tab-pane fade"><br>
+          <h3>Menu 2</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+        <div id="menu6" class="container tab-pane fade"><br>
+          <h3>Menu 2</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+        <div id="menu7" class="container tab-pane fade"><br>
+          <h3>Menu 2</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+      </div>
+    </div></div>
+    
+
+
+
+
+
+
+
+
+    <div class="container-fluid g-footer">
+      <div class="container">
+        <div class="row1 clearfix">
+          <div class="about has-qrcode">
+            <ul class="about-link clearfix one-columns">
+         
+            </ul>
+          </div>
+          <div class="qrcode">
+            <img src="/assets/images/Qr-code-footer.jpg?v=0.0.1">
+            <p>建工研究小程序</p>
+          </div>
+        </div>
+        <div class="row2 clearfix">
+          <p>中铁建工集团第四建设有限公司 版权所有</p>
+          <p>
+            <span class="copy">Copyright © 2004-2023
+              <a href="//www.crceg.com/" target="_blank">crceg.com</a> All Right
+              Reserved.
+            </span>
+            <span class="beian">
+              <a href="http://beian.miit.gov.cn/" rel="noreferrer"
+                target="_blank">京ICP备2020036365号-1</a>
+              <a
+                href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010702002062"
+                rel="noreferrer" target="_blank">京公网安备11010702002062号</a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous">
+</script>
+  </body>
+</html>
