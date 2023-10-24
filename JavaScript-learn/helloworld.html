@@ -6,6 +6,10 @@
     </head>
     <body>
         <div id="target"></div>
-        <button onclick="f(10)">run</button>
+        <button 
+        onclick="document.getElementById('target').innerHTML=Date()"
+        onmouseover="document.getElementById('target').innerHTML='点击显示时间'"
+        onmouseout="document.getElementById('target').innerHTML='j'"
+        >显示时间</button>
     </body>
 </html>
