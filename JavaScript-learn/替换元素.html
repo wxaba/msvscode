@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        window.onload = function(){
+            var oDisplay = document.getElementById("display");
+            var obtn = document.getElementById("replacebtn");
+            var oTag = document.getElementById("tag");
+            var oTxt = document.getElementById("txt");
+            obtn.onclick = function(){
+                var newTag = document.createElement(oTag.value);
+                var newTxt = document.createTextNode(oTxt.value);
+                newTag.appendChild(newTxt);
+                document.body.replaceChild(newTag,oDisplay);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="display">原文本</div><hr/>
+    请输入标签：<input id="tag"><br/>
+    请输入内容：<input id="txt"><br/>
+    <button id="replacebtn">替换</button>
+</body>
+</html>

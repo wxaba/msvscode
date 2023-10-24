@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <p id="target" style="color: red;">text</p>
+    <button id="btn-getcolor">获取文字颜色</button>
+    <span id="result-color"></span>
+
+    <script>
+        var otgt = document.getElementById("target");
+        var obtn = document.getElementById("btn-getcolor");
+        var ores = document.getElementById("result-color");
+
+        obtn.onclick = function(){
+            var color = otgt.style.color;
+            var txt = document.createTextNode(color);
+            var br =document.createElement("br");
+            ores.appendChild(txt);
+            ores.appendChild(br);
+        }
+    </script>
+</body>
+</html>
