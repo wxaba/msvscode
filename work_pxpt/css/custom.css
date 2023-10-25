@@ -12,6 +12,11 @@ body {
   /* 设置背景颜色，背景图加载过程中会显示背景色 */
   background-color: #464646;
 }
+
+.card:hover{
+  box-shadow:var(--bs-box-shadow)!important;
+}
+
 /* Color of the links BEFORE scroll */
 .navbar-scroll .nav-link,
 .navbar-scroll .navbar-toggler-icon,
