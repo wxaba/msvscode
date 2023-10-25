@@ -14,7 +14,7 @@ body {
 }
 
 .card:hover{
-  box-shadow:var(--bs-box-shadow)!important;
+  box-shadow:0px 5px 5px 5px rgba(176, 170, 170, 0.25)!important;
 }
 
 /* Color of the links BEFORE scroll */
