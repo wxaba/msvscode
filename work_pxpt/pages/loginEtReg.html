@@ -8,176 +8,159 @@
   </head>
   <body>
 
-<div class="container-fluid">
+    <div class="container-fluid mt-5">
 
-<div class="container-sm border" style="padding: 10% 20%;">
-    <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
-        <li class="nav-item" role="presentation">
-          <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
-            aria-controls="pills-login" aria-selected="true">登陆</a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
-            aria-controls="pills-register" aria-selected="false">注册</a>
-        </li>
-      </ul>
-      <!-- Pills navs -->
-      
-      <!-- Pills content -->
-      <div class="tab-content">
-        <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-          <form>
-            <div class="text-center mb-3">
-              <p>Sign in with:</p>
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-facebook-f"></i>
-              </button>
-      
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-google"></i>
-              </button>
-      
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-twitter"></i>
-              </button>
-      
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-github"></i>
-              </button>
-            </div>
-      
-            <p class="text-center">or:</p>
-      
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-              <input type="email" id="loginName" class="form-control" placeholder="用户名"/>
-            </div>
-      
-            <!-- Password input -->
-            <div class="form-outline mb-4">
-              <input type="password" id="loginPassword" class="form-control" placeholder="请如树木"/>
-            </div>
-      
-            <!-- 2 column grid layout -->
-            <div class="row mb-4">
-              <div class="col-md-6 d-flex justify-content-center">
-                <!-- Checkbox -->
-                <div class="form-check mb-3 mb-md-0">
-                  <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
-                  <label class="form-check-label" for="loginCheck"> 保持登陆 </label>
+      <div class="container-sm" >
+
+        <div class="container border rounded p-5" style="max-width: 557px;">
+          <div class="container justify-content-center text-center">
+            <img class="w-25" src="../img/logo.png" alt="logo" width="125px">
+            <h3>中铁建工集团第四建设有限公司<br/>员工在线学习平台</h3>
+            <hr />
+          </div>
+          <ul class="nav nav-pills nav-justified mb-3">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="pill" href="#pills-login"
+                aria-controls="pills-login" aria-selected="true">登陆</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="tab-register" data-bs-toggle="pill"
+                href="#pills-register"
+                aria-controls="pills-register" aria-selected="false">注册</a>
+            </li>
+          </ul>
+       <!-- Pills navs -->
+
+        <!-- Pills content -->
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="pills-login"
+            role="tabpanel" aria-labelledby="tab-login">
+            <form>
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="loginName" class="form-control"
+                  placeholder="用户名" />
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input type="password" id="loginPassword" class="form-control"
+                  placeholder="请输入密码" />
+              </div>
+
+              <!-- 2 column grid layout -->
+              <div class="row mb-4">
+                <div class="col-md-6 d-flex justify-content-center">
+                  <!-- Checkbox -->
+                  <div class="form-check mb-3 mb-md-0">
+                    <input class="form-check-input" type="checkbox" value
+                      id="loginCheck" checked />
+                    <label class="form-check-label" for="loginCheck"> 保持登陆
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-flex justify-content-center">
+                  <!-- Simple link -->
+                  <div class="container">
+                    <button type="button" class="btn btn-danger">忘记密码？</button>
+                  </div>
                 </div>
               </div>
-      
-              <div class="col-md-6 d-flex justify-content-center">
-                <!-- Simple link -->
-                <a href="#!">忘记密码？</a>
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">确认登陆</button>
+
+              <!-- Register buttons -->
+              <div class="text-center">
+                <p>尚未注册? <a href="#!">点击上方注册立即绑定员工身份</a></p>
               </div>
-            </div>
-      
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-primary btn-block mb-4">确认登陆</button>
-      
-            <!-- Register buttons -->
-            <div class="text-center">
-              <p>Not a member? <a href="#!">Register</a></p>
-            </div>
-          </form>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="pills-register" role="tabpanel"
+            aria-labelledby="tab-register">
+            <form>
+
+              <!-- Name input -->
+              <div class="form-outline mb-4">
+                <input type="text" id="registerName" class="form-control"
+                  placeholder="真实姓名" />
+              </div>
+
+              <!-- Username input -->
+              <div class="form-outline mb-4">
+                <input type="text" id="registerUsername" class="form-control"
+                  placeholder="昵称" />
+              </div>
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="registerEmail" class="form-control"
+                  placeholder="任职单位" />
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input type="password" id="registerPassword"
+                  class="form-control" placeholder="密码" />
+              </div>
+
+              <!-- Repeat Password input -->
+              <div class="form-outline mb-4">
+                <input type="password" id="registerRepeatPassword"
+                  class="form-control" placeholder="再次输入密码" />
+              </div>
+
+              <!-- Checkbox -->
+              <div class="form-check d-flex justify-content-center mb-4">
+                <input class="form-check-input me-2" type="checkbox" value
+                  id="registerCheck" checked
+                  aria-describedby="registerCheckHelpText" />
+                <label class="form-check-label" for="registerCheck">
+                  我已同意<a href="#">服务条款</a>
+                </label>
+              </div>
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-3">创建账户</button>
+            </form>
+          </div>
         </div>
-        <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
-          <form>
-            <div class="text-center mb-3">
-              <p>Sign up with:</p>
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-facebook-f"></i>
-              </button>
-      
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-google"></i>
-              </button>
-      
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-twitter"></i>
-              </button>
-      
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-github"></i>
-              </button>
-            </div>
-      
-            <p class="text-center">or:</p>
-      
-            <!-- Name input -->
-            <div class="form-outline mb-4">
-              <input type="text" id="registerName" class="form-control" />
-              <label class="form-label" for="registerName">Name</label>
-            </div>
-      
-            <!-- Username input -->
-            <div class="form-outline mb-4">
-              <input type="text" id="registerUsername" class="form-control" />
-              <label class="form-label" for="registerUsername">Username</label>
-            </div>
-      
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-              <input type="email" id="registerEmail" class="form-control" />
-              <label class="form-label" for="registerEmail">Email</label>
-            </div>
-      
-            <!-- Password input -->
-            <div class="form-outline mb-4">
-              <input type="password" id="registerPassword" class="form-control" />
-              <label class="form-label" for="registerPassword">Password</label>
-            </div>
-      
-            <!-- Repeat Password input -->
-            <div class="form-outline mb-4">
-              <input type="password" id="registerRepeatPassword" class="form-control" />
-              <label class="form-label" for="registerRepeatPassword">Repeat password</label>
-            </div>
-      
-            <!-- Checkbox -->
-            <div class="form-check d-flex justify-content-center mb-4">
-              <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
-                aria-describedby="registerCheckHelpText" />
-              <label class="form-check-label" for="registerCheck">
-                I have read and agree to the terms
-              </label>
-            </div>
-      
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
-          </form>
+
+
         </div>
+
+        
+
+
+ 
+        <!-- Pills content -->
       </div>
-      <!-- Pills content -->
-</div>
-<!-- Pills navs -->
+      <!-- Pills navs -->
 
-</div>
+    </div>
 
-  <div class="container-fluid g-footer">
-    <div class="container">
-      <div class="row2 clearfix">
-        <p>中铁建工集团第四建设有限公司 版权所有</p>
-        <p>
-          <span class="copy">Copyright © 2004-2023
-            <a href="//www.crceg.com/" target="_blank">crceg.com</a> All Right
-            Reserved.
-          </span>
-          <span class="beian">
-            <a href="http://beian.miit.gov.cn/" rel="noreferrer"
-              target="_blank">京ICP备2020036365号-1</a>
-            <a
-              href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010702002062"
-              rel="noreferrer" target="_blank">京公网安备11010702002062号</a>
-          </span>
-        </p>
+    <div class="container-fluid g-footer mt-5">
+      <div class="container">
+        <div class="row2 clearfix">
+          <p>中铁建工集团第四建设有限公司 版权所有</p>
+          <p>
+            <span class="copy">Copyright © 2004-2023
+              <a href="//www.crceg.com/" target="_blank">crceg.com</a> All Right
+              Reserved.
+            </span>
+            <span class="beian">
+              <a href="http://beian.miit.gov.cn/" rel="noreferrer"
+                target="_blank">京ICP备2020036365号-1</a>
+              <a
+                href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010702002062"
+                rel="noreferrer" target="_blank">京公网安备11010702002062号</a>
+            </span>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-
-<script src="../bootstrap532/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap532/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
