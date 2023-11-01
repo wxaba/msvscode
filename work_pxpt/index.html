@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh-Hans" data-bs-theme="light">
 
 <head>
   <title>首页|中铁建工集团第四建设有限公司在线学习平台</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/custom.css" rel="stylesheet">
+  
   <link href="bootstrap532/css/bootstrap.min.css" rel="stylesheet">
   <script src="bootstrap532/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -15,7 +15,7 @@
   <!--导航栏开始-->
   <div class="container-fluid">
     <div class="container">
-      <nav class="shadow-sm navbar navbar-expand-lg fixed-top bg-light">
+      <nav class="shadow-sm navbar navbar-expand-lg fixed-top">
         <div class="container">
           <!--LOGO开始-->
           <a class="navbar-brand" href="index.html"><img src="img/logo.png" style="width: 60px;"></a>
@@ -76,108 +76,7 @@
             <!--搜索区域结束-->
             <!--用户标识区域开始-->
             <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-thema" data-bs-toggle="dropdown">
-                  切换主题背景
-                  <i class="fas fa-bell"></i>
-                </a>
-                <!-- Dropdown menu -->
-                <ul class="dropdown-menu dropdown-menu-end notifications-list p-1" aria-labelledby="navbarDropdown">
-                  <li>
-                    <div class="row">
-                      <div class="col-md">
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" height='63' width='auto'
-                          class="d-block" alt="..." />
-                      </div>
-                      <div class="col-md">
-                        <p class="h6 mb-0">New</p>
-                        <p class="h6 mb-1">Movie title</p>
-                        <span class="small">Today</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <div class="row">
-                      <div class="col-md">
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg" height='63' width='auto'
-                          class="d-block" alt="..." />
-                      </div>
-                      <div class="col-md">
-                        <p class="h6 mb-0">New</p>
-                        <p class="h6 mb-1">Movie title</p>
-                        <span class="small">Today</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <div class="row">
-                      <div class="col-md">
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(11).jpg" height='63' width='auto'
-                          class="d-block" alt="..." />
-                      </div>
-                      <div class="col-md">
-                        <p class="h6 mb-0">New</p>
-                        <p class="h6 mb-1">Movie title</p>
-                        <span class="small">Today</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <div class="row">
-                      <div class="col-md">
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(20).jpg" height='63' width='auto'
-                          class="d-block" alt="..." />
-                      </div>
-                      <div class="col-md">
-                        <p class="h6 mb-0">New</p>
-                        <p class="h6 mb-1">Movie title</p>
-                        <span class="small">Today</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <div class="row">
-                      <div class="col-md">
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(5).jpg" height='63' width='auto'
-                          class="d-block" alt="..." />
-                      </div>
-                      <div class="col-md">
-                        <p class="h6 mb-0">New</p>
-                        <p class="h6 mb-1">Movie title</p>
-                        <span class="small">Today</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <div class="row">
-                      <div class="col-md">
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" height='63' width='auto'
-                          class="d-block" alt="..." />
-                      </div>
-                      <div class="col-md">
-                        <p class="h6 mb-0">New</p>
-                        <p class="h6 mb-1">Movie title</p>
-                        <span class="small">Today</span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="pages/profile.html">{{user.username}}</a>
               </li>
@@ -208,6 +107,14 @@
                   <li><a class="dropdown-item" href="#">帮助</a></li>
                   <li><a class="dropdown-item" href="#" style="color: crimson;">退出登录</a></li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <button class="btn border" type="button" id="day-night" onclick="dnswitch()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                  <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                </svg>
+              </button>
+                <!-- Dropdown menu -->
               </li>
             </ul>
             <!--用户标识区域结束-->
@@ -647,7 +554,7 @@
   <!-- 主体结束 -->
 
   <!-- 页脚信息开始 -->
-  <div class="container-fluid g-footer mt-5  bg-light">
+  <div class="container-fluid g-footer mt-5">
     <div class="container pt-5">
       <div class="row1 clearfix">
         <div class="about has-qrcode">
@@ -680,6 +587,24 @@
   </div>
   <!-- 页脚信息结束 -->
 
+  <script>
+    var dayNightSwitch = document.getElementById('day-night');
+    var isNight = 1;
+    function dnswitch(){
+      if((isNight&1)===0){
+        document.getElementsByTagName('html')[0].setAttribute('data-bs-theme','dark');
+        isNight++;
+      }
+      else{
+        document.getElementsByTagName('html')[0].setAttribute('data-bs-theme','light');
+        isNight++;
+      }
+      
+    }
+  </script>
+
 </body>
+
+
 
 </html>
