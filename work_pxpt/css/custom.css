@@ -65,3 +65,8 @@ nav{
   font-size: 1.75rem;
   letter-spacing: 3px;
 }
+
+.dropdown-menu,.dropdown-item{
+  backdrop-filter: blur(300px)!important;
+  -webkit-backdrop-filter: blur(300px)!important;
+}
