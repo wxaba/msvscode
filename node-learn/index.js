@@ -10,16 +10,10 @@ const server = http.createServer((request, response) => {
 
    console.log(path.parse(rootpath+request.url));
    let requesturl = rootpath+pathname
-   if(requesturl == '/Users/wuzei/Documents/msvscode/work_pxpt/Users/wuzei/Documents/qp.mp4'){
-      requesturl = '/Users/wuzei/Documents/qp.mp4';
-      let video = ''
+   if(requesturl == '/Users/wuzei/Documents/msvscode/work_pxpt/Users/wuzei/Documents/qps.mp4'){
+      requesturl = '/Users/wuzei/Documents/qps.mp4';
       const videostream = fs.createReadStream(requesturl);
-      videostream.on('data',function(chunk){
-         video += chunk;
-      });
-      videostream.on('end',function(){
-         response.end(video);
-      })
+      videostream.pipe(response);
       return
    };
 
