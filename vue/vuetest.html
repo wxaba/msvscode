@@ -7,12 +7,20 @@
         <div id="root">
             <h1>{{name}}</h1>
             <input type="text" v-model="name"/>
+            <button @click="switchSeen">隐藏/切换</button>
+            <h1 v-show="seen">uiybuixm</h1>
         </div>
         <script>
             const vm = new Vue({
                 el:"#root",
                 data:{
-                    name:"cdnm"
+                    name:"cdnm",
+                    seen:true
+                },
+                methods:{
+                    switchSeen: function(){
+                        this.seen = !this.seen
+                    }
                 }
             })
         </script>
