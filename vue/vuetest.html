@@ -9,13 +9,23 @@
             <input type="text" v-model="name"/>
             <button @click="switchSeen">隐藏/切换</button>
             <h1 v-show="seen">uiybuixm</h1>
+
+            <ol>
+                <li v-for="i in persons">{{i.name}}</li>
+            </ol>
         </div>
         <script>
             const vm = new Vue({
                 el:"#root",
                 data:{
                     name:"cdnm",
-                    seen:true
+                    seen:true,
+                    persons:[
+                        {name:"li"},
+                        {name:"wong"},
+                        {name:"hu"},
+                        {name:"chow"}
+                    ]
                 },
                 methods:{
                     switchSeen: function(){
