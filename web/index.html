@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh-Hans" data-bs-theme="light">
 
 <head>
 <title>首页|中铁建工集团第四建设有限公司在线学习平台</title>
@@ -814,15 +814,13 @@
 
 <script>
   var dayNightSwitch = document.getElementById('day-night');
-  var isNight = false;
+  var isNight = document.getElementsByTagName('html')[0].data-bs-theme;
   function dnswitch(){
-    if(isNight){
-        document.getElementsByTagName('html')[0].setAttribute('data-bs-theme','dark');
-        isNight = !isNight;
+    if(isNight == 'light'){
+      document.getElementsByTagName('html')[0].setAttribute('data-bs-theme','dark');
     }
     else{
-        document.getElementsByTagName('html')[0].setAttribute('data-bs-theme','light');
-        isNight = !isNight;
+      document.getElementsByTagName('html')[0].setAttribute('data-bs-theme','light');
     }
   }
 </script>
