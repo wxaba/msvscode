@@ -30,14 +30,16 @@
         <div class="tab-content">
           <div class="tab-pane fade show active" id="pills-login"
             role="tabpanel" aria-labelledby="tab-login">
-            <form>
-              <div class="form-outline mb-3 mt-3">
+            <form action="/login" method="post">
+              <div class="form-floating mb-3 mt-3">
                 <input type="tel"  id="loginName" class="form-control"
-                  placeholder="用户名" required pattern="[0-9]{11}"/>
+                  placeholder="用户名" required />
+                <label for="loginName">用户名</label>
               </div>
-              <div class="form-outline mb-4">
+              <div class="form-floating mb-4">
                 <input type="password" id="loginPassword" class="form-control"
                   placeholder="请输入密码" />
+                <label for="loginPassword">密码</label>
               </div>
               <div class="row mb-4">
                 <div class="col-md-6 d-flex justify-content-center">
