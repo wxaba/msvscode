@@ -2,13 +2,13 @@
 <html lang="zh-Hans">
 
 <head>
-  <title>首页|中铁建工集团第四建设有限公司在线学习平台</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>首页|中铁建工集团第四建设有限公司在线学习平台</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link href="bootstrap532/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/custom.css" rel="stylesheet">
-  <script src="bootstrap532/js/bootstrap.bundle.min.js"></script>
+<link href="bootstrap532/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<script src="bootstrap532/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -126,12 +126,10 @@
     </div>
   </div>
 </header>
-
-
-  <!-- 主体开始 -->
-  <div class="container-fluid pt-3">
-
-    <div class="container-fluid" style="margin-top: 72px;">
+<!-- 主体开始 -->
+<div class="container-fluid pt-3">
+  <!--banner开始-->
+  <div class="container" style="margin-top: 72px;">
       <!--banner-->
       <div class="container mt-5">
         <!-- Carousel -->
@@ -147,21 +145,21 @@
           <!-- The slideshow/carousel -->
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img/banner01.jpg" class="d-block" style="width:100%;max-height: ;" >
+              <img src="img/banner01.jpg" class="d-block" style="width:100%;max-height: 390px;" >
               <div class="carousel-caption">
                 <h3>{{banner 01 title}}</h3>
                 <p>{{banner 01 descriptions}}</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="https://static.runoob.com/images/mix/img_nature_wide.jpg" class="d-block" style="width:100%">
+              <img src="https://static.runoob.com/images/mix/img_nature_wide.jpg" class="d-block" style="width:100%;max-height: 390px;">
               <div class="carousel-caption">
                 <h3>第二张图片描述标题</h3>
                 <p>第二张图片描述内容显示在这里！！！</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="https://static.runoob.com/images/mix/img_mountains_wide.jpg" class="d-block" style="width:100%">
+              <img src="https://static.runoob.com/images/mix/img_mountains_wide.jpg" class="d-block" style="width:100%;max-height: 390px;">
               <div class="carousel-caption">
                 <h3>第三张图片描述标题</h3>
                 <p>第三张图片描述内容显示在这里！！！</p>
@@ -181,10 +179,11 @@
       
 
 
-    </div>
+  </div><!--banner结束-->
 
-    <!--学习路径开始-->
-    <div class="container mt-5">
+  <!--学习路径区域开始-->
+  <div class="container mt-5">
+      <!--学习路径行开始-->
       <div class="row">
         <div class="col-sm-2">
           <div class="card ">
@@ -260,300 +259,537 @@
               </div>
             </div>
           </div>
-
         </div>
-      </div>
-    </div>
-    <!--学习路径结束-->
+      </div><!--学习路径行结束-->
+  </div><!--学习路径结束-->
 
-    <!--学习报告 排行榜-->
-    <div class="container-fluid mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8">
-            <h3>学习报告</h3>
-            <div class="card ">
-              <div class="card-header">学习报告 <span style="float: right;"><a href="user.html">查看更多>></a></span> </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-4 border">
-                    {{hoursTodayleran}}时{{minsTodayleran}}分<br />今日学习时长
-                  </div>
-                  <div class="col-8">
-                    <div class="row">
-                      <div class="col-4">学习时长<br />0时0分
-                        <hr />完成任务<br />0个
-                      </div>
-                      <div class="col-4">学习时长<br />0时0分
-                        <hr />完成任务<br />0个
-                      </div>
-                      <div class="col-4">学习时长<br />0时0分
-                        <hr />完成任务<br />0个
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <h3>排行榜</h3>
-            <div class="card ">
-              <div class="card-header">总学时榜</div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-4" style="background-color:violet;">2nd<br>姓名 <br>学习时长</div>
-                  <div class="col-4" style="background-color: gold;">1st <br>姓名 <br>学习时长</div>
-                  <div class="col-4" style="background-color:brown;">3rd<br>姓名 <br>学习时长</div>
-                </div>
-              </div>
-              <div class="card-footer"><a href="rank.html">查看完整榜单</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!--学习记录-->
-    <div class="container-fluid mt-5">
-      <div class="container">
-        <h3>学习记录</h3>
-        <div class="row">
-          <div class="col">
-            <div class="card ">
-              <div class="card-header">头部</div>
-              <div class="card-body">内容</div>
-              <div class="card-footer">底部</div>
+<!--学习报告 排行榜开始-->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-8">
+      <h3>学习报告</h3>
+      <div class="card ">
+        <div class="card-header">学习报告 <span style="float: right;"><a href="user.html">查看更多>></a></span> </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-4 border">
+              {{hoursTodayleran}}时{{minsTodayleran}}分<br />今日学习时长
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <div class="card-header">头部</div>
-              <div class="card-body">内容</div>
-              <div class="card-footer">底部</div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <div class="card-header">头部</div>
-              <div class="card-body">内容</div>
-              <div class="card-footer">底部</div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <div class="card-header">头部</div>
-              <div class="card-body">内容</div>
-              <div class="card-footer">底部</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--学习地图 行业资讯-->
-    <div class="container-fluid mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8">
-            <h3>学习地图</h3>
-            <div class="card">
-              <div class="card-header">学习报告</div>
-              <div class="card-body">内容</div>
-              <div class="card-footer">底部</div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <h3>行业资讯</h3>
-            <div class="card">
-              <div class="card-header">排行榜</div>
-              <div class="card-body">内容</div>
-              <div class="card-footer">底部</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--课程推荐-->
-    <div class="container-fluid mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-8">
-            <h3>课程推荐</h3>
-          </div>
-          <div class="col-4">
-            <span style="float: right;"><a href="curriculum.html">查看更多>></a></span>
-          </div>
-        </div>
-        
-        <div class="container mt-3">
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" data-bs-toggle="tab" href="#home">专属推荐</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#menu1">工程管理</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#menu2">市场/招投标</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#menu3">企业管理</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#menu4">人力资源管理</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#menu5">通识管理</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#menu6">职业/执业资格</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#menu7">行业会议</a>
-            </li>
-          </ul>
-
-          <!-- 专属推荐 -->
-          <div class="tab-content">
-            <div id="home" class="container tab-pane active"><br>
-              <h3>专属推荐</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="col-8">
               <div class="row">
-                <div class="col-md-2">
-                  <div class="card">
-                    <div class="card-header">公路建设商务学习路线</div>
-                    <div class="card-body">内容</div>
-                    <div class="card-footer">底部</div>
-                  </div>
+                <div class="col-4">学习时长<br />0时0分
+                  <hr />完成任务<br />0个
                 </div>
-                <div class="col-md-2">
-                  <div class="card">
-                    <div class="card-header">公路建设商务学习路线</div>
-                    <div class="card-body">内容</div>
-                    <div class="card-footer">底部</div>
-                  </div>
+                <div class="col-4">学习时长<br />0时0分
+                  <hr />完成任务<br />0个
                 </div>
-                <div class="col-md-2">
-                  <div class="card">
-                    <div class="card-header">公路建设商务学习路线</div>
-                    <div class="card-body">内容</div>
-                    <div class="card-footer">底部</div>
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <div class="card">
-                    <div class="card-header">公路建设商务学习路线</div>
-                    <div class="card-body">内容</div>
-                    <div class="card-footer">底部</div>
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <div class="card">
-                    <div class="card-header">公路建设商务学习路线</div>
-                    <div class="card-body">内容</div>
-                    <div class="card-footer">底部</div>
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <div class="card">
-                    <div class="card-header">公路建设商务学习路线</div>
-                    <div class="card-body">内容</div>
-                    <div class="card-footer">底部</div>
-                  </div>
+                <div class="col-4">学习时长<br />0时0分
+                  <hr />完成任务<br />0个
                 </div>
               </div>
-            </div>
-            <div id="menu1" class="container tab-pane fade"><br>
-              <h3>工程管理</h3>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <div class="row">
-                <div class="col">
-                  <div class="card">
-                    <div class="card-header">公路建设商务学习路线</div>
-                    <div class="card-body">内容</div>
-                    <div class="card-footer">底部</div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <div class="card-header">公路建设商务学习路线</div>
-                    <div class="card-body">内容</div>
-                    <div class="card-footer">底部</div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <div class="card-header">公路建设商务学习路线</div>
-                    <div class="card-body">内容</div>
-                    <div class="card-footer">底部</div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <div class="card-header">公路建设商务学习路线</div>
-                    <div class="card-body">内容</div>
-                    <div class="card-footer">底部</div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <div class="card-header">公路建设商务学习路线</div>
-                    <div class="card-body">内容</div>
-                    <div class="card-footer">底部</div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <div class="card-header">公路建设商务学习路线</div>
-                    <div class="card-body">内容</div>
-                    <div class="card-footer">底部</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="menu2" class="container tab-pane fade"><br>
-              <h3>市场/招投标</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.</p>
-            </div>
-            <div id="menu3" class="container tab-pane fade"><br>
-              <h3>企业管理</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.</p>
-            </div>
-            <div id="menu4" class="container tab-pane fade"><br>
-              <h3>人力资源管理</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.</p>
-            </div>
-            <div id="menu5" class="container tab-pane fade"><br>
-              <h3>通识管理</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.</p>
-            </div>
-            <div id="menu6" class="container tab-pane fade"><br>
-              <h3>职业/执业资格</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.</p>
-            </div>
-            <div id="menu7" class="container tab-pane fade"><br>
-              <h3>行业会议</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
+    <div class="col-sm-4">
+      <h3>排行榜</h3>
+      <div class="card ">
+        <div class="card-header">总学时榜</div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-4" >
+              <img src="img/userrank-02.png" alt="" class="mx-auto d-block">
+            </div>
+            <div class="col-4" >
+              <img src="img/userrank-01.png" alt="" class="mx-auto d-block">
+            </div>
+            <div class="col-4" >
+              <img src="img/userrank-03.png" alt="" class="mx-auto d-block">
+            </div>
+          </div>
+        </div>
+        <div class="card-footer"><a href="rank.html">查看完整榜单</a></div>
+      </div>
+    </div>
   </div>
-  <!-- 主体结束 -->
+</div><!--学习报告 排行榜结束-->
+
+<!--学习记录开始-->
+<div class="container mt-5">
+  <h3>学习记录</h3>
+  <div class="row">
+    <div class="col">
+      <div class="card ">
+        <div class="card-header">头部</div>
+        <div class="card-body">内容</div>
+        <div class="card-footer">底部</div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-header">头部</div>
+        <div class="card-body">内容</div>
+        <div class="card-footer">底部</div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-header">头部</div>
+        <div class="card-body">内容</div>
+        <div class="card-footer">底部</div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-header">头部</div>
+        <div class="card-body">内容</div>
+        <div class="card-footer">底部</div>
+      </div>
+    </div>
+  </div>
+</div><!--学习记录结束-->
+
+<!--学习地图 行业资讯开始-->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-8">
+      <h3>学习地图</h3>
+      <div class="card">
+        <div class="card-header">学习报告</div>
+        <div class="card-body">内容</div>
+        <div class="card-footer">底部</div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <h3>行业资讯</h3>
+      <div class="card">
+        <div class="card-header">排行榜</div>
+        <div class="card-body">内容</div>
+        <div class="card-footer">底部</div>
+      </div>
+    </div>
+  </div>
+</div><!--学习地图 行业资讯结束-->
+
+<!--课程推荐开始-->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-8">
+      <h3>课程推荐</h3>
+    </div>
+    <div class="col-4">
+      <span style="float: right;"><a href="curriculum.html">查看更多>></a></span>
+    </div>
+  </div>
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#tj-1">专属推荐</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#tj-2">工程管理</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#tj-3">市场/招投标</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#tj-4">企业管理</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#tj-5">人力资源管理</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#tj-6">通识管理</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#tj-7">职业/执业资格</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#tj-8">行业会议</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div id="tj-1" class="container tab-pane active"><br>
+        <h5>专属推荐</h5>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tj-2" class="container tab-pane fade"><br>
+        <h5>工程管理</h5>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tj-3" class="container tab-pane fade"><br>
+        <h5>市场/招投标</h5>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tj-4" class="container tab-pane fade"><br>
+        <h5>企业管理</h5>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tj-5" class="container tab-pane fade"><br>
+        <h5>人力资源管理</h5>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tj-6" class="container tab-pane fade"><br>
+        <h5>通识管理</h5>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tj-7" class="container tab-pane fade"><br>
+        <h5>职业/执业资格</h5>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tj-8" class="container tab-pane fade"><br>
+        <h5>行业会议</h5>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-header">公路建设商务学习路线</div>
+              <div class="card-body">内容</div>
+              <div class="card-footer">底部</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div><!--课程推荐结束-->
+</div><!-- 主体结束 -->
+
 
 <footer>
     <div class="container-fluid g-footer mt-5">
@@ -576,24 +812,20 @@
 </footer>
 
 
-  <script>
-    var dayNightSwitch = document.getElementById('day-night');
-    var isNight = 1;
-    function dnswitch(){
-      if((isNight&1)===0){
+<script>
+  var dayNightSwitch = document.getElementById('day-night');
+  var isNight = false;
+  function dnswitch(){
+    if(isNight){
         document.getElementsByTagName('html')[0].setAttribute('data-bs-theme','dark');
-        isNight++;
-      }
-      else{
-        document.getElementsByTagName('html')[0].setAttribute('data-bs-theme','light');
-        isNight++;
-      }
-      
+        isNight = !isNight;
     }
-  </script>
-
+    else{
+        document.getElementsByTagName('html')[0].setAttribute('data-bs-theme','light');
+        isNight = !isNight;
+    }
+      
+  }
+</script>
 </body>
-
-
-
 </html>
