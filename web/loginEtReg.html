@@ -75,17 +75,23 @@
                 placeholder="真实姓名" />
                   <label for="registerName">真实姓名</label>
               </div>
-              <div class="form-outline mb-4">
+              <!--用户填写昵称-->
+              <div class="form-floating mb-4">
                 <input type="text" id="registerUsername" class="form-control"
                 name="nickname"  
                 placeholder="昵称" />
+                <label for="registerUsername">昵称</label>
               </div>
-              <div class="form-outline mb-4">
-                <input type="text" id="registerEmail" class="form-control"
-                name="workunit"  
-                placeholder="任职单位" />
+
+              <!--用户号码-->
+              <div class="form-floating mb-4">
+                <input type="tel" id="registerPhone" class="form-control"
+                name="registerPhone"  pattern="[0-9]{11}"
+                placeholder="电话号码" />
+                <label for="registerPhone">电话号码</label>
               </div>
-              <div class="form-outline mb-4">
+
+              <div class="form-floating mb-4">
                 <input type="password" id="registerPassword"
                 name="password1"  
                 class="form-control" placeholder="密码" />
