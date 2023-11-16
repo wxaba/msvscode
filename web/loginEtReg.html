@@ -67,32 +67,38 @@
             aria-labelledby="tab-register">
 
             <!-- 注册表单 -->
-            <form action="/register" method="post" name="register" enctype="multipart/form-data">
+            <form action="/register" method="post" name="register">
               <!--用户填写真实姓名-->
               <div class="form-floating mb-4">
                 <input type="text" id="registerName" class="form-control"
-                  placeholder="真实姓名" />
+                name="realname"  
+                placeholder="真实姓名" />
                   <label for="registerName">真实姓名</label>
               </div>
               <div class="form-outline mb-4">
                 <input type="text" id="registerUsername" class="form-control"
-                  placeholder="昵称" />
+                name="nickname"  
+                placeholder="昵称" />
               </div>
               <div class="form-outline mb-4">
-                <input type="email" id="registerEmail" class="form-control"
-                  placeholder="任职单位" />
+                <input type="text" id="registerEmail" class="form-control"
+                name="workunit"  
+                placeholder="任职单位" />
               </div>
               <div class="form-outline mb-4">
                 <input type="password" id="registerPassword"
-                  class="form-control" placeholder="密码" />
+                name="password1"  
+                class="form-control" placeholder="密码" />
               </div>
               <div class="form-outline mb-4">
                 <input type="password" id="registerRepeatPassword"
-                  class="form-control" placeholder="再次输入密码" />
+                name="password2"
+                class="form-control" placeholder="再次输入密码" />
               </div>
               <div class="form-check d-flex justify-content-center mb-4">
                 <input class="form-check-input me-2" type="checkbox" value
-                  id="registerCheck" checked
+                name="agree"
+                id="registerCheck" checked
                   aria-describedby="registerCheckHelpText" />
                 <label class="form-check-label" for="registerCheck">
                   我已同意<a href="#">服务条款</a>
