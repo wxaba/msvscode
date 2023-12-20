@@ -16,7 +16,7 @@ app.post('/login',function(req, res){
 })
 
 app.post('/register', function(req,res){
-    console.log(req.body.realname)
+    console.log(req.body)
     res.send('注册')
 })
 app.listen(80,() => {console.log('服务已启动')});
