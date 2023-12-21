@@ -5,10 +5,10 @@ app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
 app.get('/',function(req, res){
-res.sendFile('/Users/wuzei/Documents/msvscode/web/index.html')
+res.sendFile('../web/pages/index.html')
 })
 app.get('/*',function(req, res){
-    res.sendFile('/Users/wuzei/Documents/msvscode/web'+req.url)
+    res.sendFile('web/pages'+req.url)
     })
 app.post('/login',function(req, res){
     console.log(req.headers)
