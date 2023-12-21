@@ -2,14 +2,13 @@ const express = require("express");
 const path = require('path');
 const app = express();
 
-const rootPath = path.dirname(__dirname);
+const rootPath = path.join(path.dirname(__dirname),'web');
 
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
-app.use('/static',express.static(path.join(rootPath,'puclic')));
 
 app.get('/',function(req, res){
-    res.sendFile(path.join(rootPath,'pages','index.html'));
+    res.sendFile(path.join(rootPath,'index.html'));
 })
 app.get('/*',function(req, res){
     console.log(req.url)
