@@ -2,19 +2,19 @@ const express = require("express");
 const path = require('path');
 const app = express();
 
-const webPath = path.join(path.dirname(__dirname),'web');
+const rootPath = path.dirname(__dirname);
 
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
+app.use('/static',express.static(path.join(rootPath,'puclic')));
 
 app.get('/',function(req, res){
-    res.sendFile(path.join(webPath,'pages','index.html'));
-    console.log(webPath);
+    res.sendFile(path.join(rootPath,'pages','index.html'));
 })
 app.get('/*',function(req, res){
     console.log(req.url)
     console.log(req.path)
-    res.sendFile(path.join(webPath,req.path))
+    res.sendFile(path.join(rootPath,req.path))
     })
 app.post('/login',function(req, res){
     console.log(req.headers)
