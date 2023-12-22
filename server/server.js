@@ -10,10 +10,6 @@ app.get('/login',(req, res)=>{
     res.sendFile(path.join(path.dirname(__dirname),'web','login.html'))
 });
 
-app.post('/login',(req, res)=>{
-    res.send(req.body);
-    console.log(typeof req.body);
-    console.log(req.body);
-});
+
 
 app.listen(80,() => {console.log('服务已启动')});
