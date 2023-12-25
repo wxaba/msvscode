@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>个人中心|中铁建工集团第四建设有限公司在线学习平台</title>
+    <title>登陆|中铁建工集团第四建设有限公司在线学习平台</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="public/css/custom.css" rel="stylesheet">
@@ -20,7 +20,7 @@
           <ul class="nav nav-pills nav-justified mb-3">
             <li class="nav-item">
               <a class="nav-link active" data-bs-toggle="pill" href="#pills-login"
-                aria-controls="pills-login" aria-selected="true">登陆</a>
+                aria-controls="pills-login" aria-selected="true">OA账号登陆</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="tab-register" data-bs-toggle="pill"
@@ -31,18 +31,17 @@
         <div class="tab-content">
           <div class="tab-pane fade show active" id="pills-login"
             role="tabpanel" aria-labelledby="tab-login">
-            <form action="#" method="post"
-              name="form1" autocomplete="off"
-            >
+            <form action="/login" method="post"
+              name="form1" autocomplete="off">
               <div class="form-floating mb-3 mt-3">
                 <input type="text"  id="USER_ID" class="form-control"
-                  placeholder="用户名" name="UNAME" required />
-                <label for="loginName">用户名</label>
+                  placeholder="OA用户名" name="UNAME" required />
+                <label for="loginName">OA用户名</label>
               </div>
               <div class="form-floating mb-4">
                 <input type="password" id="PASSWORD" name="PASSWORD" class="form-control"
-                  placeholder="请输入密码" />
-                <label for="loginPassword">密码</label>
+                  placeholder="OA密码" />
+                <label for="loginPassword">OA密码</label>
                 <input type="hidden" name="encode_type" value="1">
               </div>
               <div class="row mb-4">
@@ -60,7 +59,7 @@
                   </div>
                 </div>
               </div>
-              <button type="button" class="btn btn-primary btn-block mb-4" id="btn-login">确认登陆</button>
+              <button type="submit" class="btn btn-primary btn-block mb-4" id="btn-login">确认登陆</button>
               <div class="text-center">
                 <p>尚未注册? <a href="#!">点击上方注册绑定员工身份</a></p>
               </div>

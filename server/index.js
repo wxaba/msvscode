@@ -10,7 +10,8 @@ app.get('/login',(req, res)=>{
     res.sendFile(path.join(path.dirname(__dirname),'web','login.html'))
 });
 
-app.post('/test',(req, res)=>{
+/*实现oa 账号*/
+app.post('/login',(req, res)=>{
     console.log(req.body.UNAME);
     console.log(req.body.PASSWORD);
     const form = new FormData();
@@ -24,9 +25,9 @@ app.post('/test',(req, res)=>{
         return response.text();
     }).then((response) =>{
         if(response.length == 1782){
-            res.send('ok');
+            res.sendFile(path.join(path.dirname(__dirname),'web','index.html'))
         }else{
-            res.send('not ok');
+            res.send('密码错误');
         }
     })
 });
