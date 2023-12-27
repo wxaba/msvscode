@@ -1,4 +1,12 @@
+.nonselect {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
 body {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   /* 加载背景图 */
   background-image: url(../img/task-index-bg.png);
   /* 背景图垂直、水平均居中 */
