@@ -32,7 +32,7 @@
         <div class="tab-content">
           <div class="tab-pane fade show active" id="pills-login"
             role="tabpanel" aria-labelledby="tab-login">
-            <form action="/login" method="post" name="formLogin" autocomplete="off">
+            <form id="fromLogin" name="formLogin" autocomplete="off" action="">
               <div class="form-floating mb-3 mt-3">
                 <input type="text"  id="USER_ID" class="form-control" placeholder="OA用户名" name="UNAME" required />
                 <label for="loginName">OA用户名</label>
@@ -54,7 +54,7 @@
                 </div>
               </div>
               <div class="container text-center pt-1">
-                <button type="submit" class="btn btn-success btn-block mb-4" id="btn-login">确认登陆</button>
+                <input type="button" class="btn btn-success btn-block mb-4" id="btnLogin">确认登陆</input>
               </div>
               
               <div class="text-center">
@@ -126,5 +126,9 @@
      
 </footer>
 <script src="public/css/bootstrap532/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+btnlogin = document.getElementById("btnLogin");
+formLogin = document.formLogin;
+</script>
 </body>
 </html>
